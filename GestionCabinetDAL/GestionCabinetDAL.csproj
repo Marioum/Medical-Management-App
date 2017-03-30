@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C1876B8B-1C0D-4E7D-BD2B-5F981A8923B9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GestionCabinetDAL</RootNamespace>
+    <AssemblyName>GestionCabinetDAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Models\Allergie.cs" />
+    <Compile Include="Models\AnalyseMed.cs" />
+    <Compile Include="Models\AnalyseMed_Cons.cs" />
+    <Compile Include="Models\AntecedentMedical.cs" />
+    <Compile Include="Models\Consultation.cs" />
+    <Compile Include="Models\Echographie.cs" />
+    <Compile Include="Models\Echo_Cons.cs" />
+    <Compile Include="Models\GestionCabinetContext.cs" />
+    <Compile Include="Models\InterChirur_Cons.cs" />
+    <Compile Include="Models\IntervChirugicale.cs" />
+    <Compile Include="Models\IRM.cs" />
+    <Compile Include="Models\IRM_Cons.cs" />
+    <Compile Include="Models\Mapping\AllergieMap.cs" />
+    <Compile Include="Models\Mapping\AnalyseMedMap.cs" />
+    <Compile Include="Models\Mapping\AnalyseMed_ConsMap.cs" />
+    <Compile Include="Models\Mapping\AntecedentMedicalMap.cs" />
+    <Compile Include="Models\Mapping\ConsultationMap.cs" />
+    <Compile Include="Models\Mapping\EchographieMap.cs" />
+    <Compile Include="Models\Mapping\Echo_ConsMap.cs" />
+    <Compile Include="Models\Mapping\InterChirur_ConsMap.cs" />
+    <Compile Include="Models\Mapping\IntervChirugicaleMap.cs" />
+    <Compile Include="Models\Mapping\IRMMap.cs" />
+    <Compile Include="Models\Mapping\IRM_ConsMap.cs" />
+    <Compile Include="Models\Mapping\MedicamentMap.cs" />
+    <Compile Include="Models\Mapping\Med_ConsMap.cs" />
+    <Compile Include="Models\Mapping\PatientMap.cs" />
+    <Compile Include="Models\Mapping\Patient_AllergieMap.cs" />
+    <Compile Include="Models\Mapping\Pat_Antecedent_MedMap.cs" />
+    <Compile Include="Models\Mapping\RadioMap.cs" />
+    <Compile Include="Models\Mapping\Radio_ConsMap.cs" />
+    <Compile Include="Models\Mapping\ReeducationMap.cs" />
+    <Compile Include="Models\Mapping\Ree_ConsMap.cs" />
+    <Compile Include="Models\Mapping\RendezVouMap.cs" />
+    <Compile Include="Models\Mapping\ScannerMap.cs" />
+    <Compile Include="Models\Mapping\Scanner_ConsMap.cs" />
+    <Compile Include="Models\Mapping\sysdiagramMap.cs" />
+    <Compile Include="Models\Mapping\UserMap.cs" />
+    <Compile Include="Models\Medicament.cs" />
+    <Compile Include="Models\Med_Cons.cs" />
+    <Compile Include="Models\Patient.cs" />
+    <Compile Include="Models\Patient_Allergie.cs" />
+    <Compile Include="Models\Pat_Antecedent_Med.cs" />
+    <Compile Include="Models\Radio.cs" />
+    <Compile Include="Models\Radio_Cons.cs" />
+    <Compile Include="Models\Reeducation.cs" />
+    <Compile Include="Models\Ree_Cons.cs" />
+    <Compile Include="Models\RendezVou.cs" />
+    <Compile Include="Models\Scanner.cs" />
+    <Compile Include="Models\Scanner_Cons.cs" />
+    <Compile Include="Models\sysdiagram.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

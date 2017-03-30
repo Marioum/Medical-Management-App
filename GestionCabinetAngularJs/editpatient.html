@@ -1,0 +1,81 @@
+﻿<div role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-header">
+            <div class="modal-title"><h1>Cordonnées Patient</h1></div>
+        </div>
+        <div class="modal-body">
+            <form role="form">
+                <div class=" form-group" style="padding-left: 45px;padding-right: 350px;">
+                    <label>Cin:</label>
+                    <input type="text" class="form-control" ng-model="patient.numCin" />
+                </div>
+                <div class="form-group" style="padding-left: 45px;padding-right: 350px;">
+                    <label>Nom:</label>
+                    <input type="text" class="form-control" ng-model="patient.nom" />
+                </div>
+                <div class="form-group" style="padding-left: 45px;padding-right: 350px;">
+                    <label>Prénom:</label>
+                    <input type="text" class="form-control" ng-model="patient.prenom" />
+                </div>
+                <div class="form-group" style="padding-left: 45px;padding-right: 350px;">
+                    <label>Date de naissance:</label>
+                    <input type="text" class="form-control" ng-model="patient.dateNaissance" />
+                </div>
+                <div class="form-group" style="padding-left: 45px;padding-right: 350px;">
+                    <label>Sexe:</label>
+                    <input type="text" class="form-control" ng-model="patient.sexe" />
+                </div>
+                <div class="form-group" style="padding-left: 45px;padding-right: 350px;">
+                    <label>Poids:</label>
+                    <input type="text" class="form-control" ng-model="patient.poids" />
+                </div>
+                <div class="form-group" style="padding-left: 45px;padding-right: 350px;">
+                    <label>Taille:</label>
+                    <input type="text" class="form-control" ng-model="patient.taille" />
+                </div>
+                <div class="form-group" style="padding-left: 45px;padding-right: 350px;">
+                    <label>Profession:</label>
+                    <input type="text" class="form-control" ng-model="patient.profession" />
+                </div>
+                <div class="form-group" style="padding-left: 45px;padding-right: 350px;">
+                    <label>Etat civil:</label>
+                    <input type="text" class="form-control" ng-model="patient.etatCivil" />
+                </div>
+                <div class="form-group" style="padding-left: 45px;padding-right: 350px;">
+                    <label>Nombre d'enfants:</label>
+                    <input type="text" class="form-control" ng-model="patient.nbreEnfant" />
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <center>
+                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#Modaledit" data-backdrop="static" >update</button>
+                <button type="button" class="btn btn-danger" ng-click="cancelpatient()">Cancel</button>
+            </center>
+        </div>
+
+    </div>
+</div>
+
+<div id="Modaledit" class="modal fade" role="dialog" style="    top: 400px;">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"><h1>Do you want to update data?</h1></h4>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+            <center>
+                <button type="button" class="btn btn-success" ng-click="yesUpdate(patient)">Yes</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+            </center>
+        </div>
+        </div>
+
+    </div>
+</div>

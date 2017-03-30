@@ -1,0 +1,16 @@
+﻿<div class="col-sm-1" style="width: 0px;"></div>
+<div class="col-sm-2">
+    <h4>Welcome Doctor {{profil.login}}</h4>
+    <br /><br />
+    <button class="btn btn-link" style="width:177px" ng-click="fctpatient()">Patient</button><br /><br />
+    <button class="btn btn-link" style="width:177px" ng-click="fctcalendar()">Calendar</button><br /><br />
+    <button class="btn btn-link" style="width:177px" ng-click="fcttreatment()">Treatment</button>
+</div>
+<div class="col-sm-8">
+    <div ng-include="CurrentView1"></div>
+</div>
+<!--  <div ng-include="souspageview"></div>-->
+
+<div class="col-sm-1">
+    <h3>{{theTime}}</h3>
+</div>

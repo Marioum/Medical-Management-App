@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html ng-app="CabinetApp">
+<head>
+    <title></title>
+    <link href="signin.css" rel="stylesheet" />
+    <link href="Content/kendo/2016.2.714/kendo.common.min.css" rel="stylesheet" />
+    <link href="Content/kendo/2016.2.714/kendo.default.min.css" rel="stylesheet" />
+    <link href="Content/kendo/2016.2.714/kendo.mobile.all.min.css" rel="stylesheet" />
+    <link href="Content/kendo/2016.2.714/kendo.rtl.min.css" rel="stylesheet" />
+   <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+    <script src="Scripts/kendo/2016.2.714/jquery.min.js"></script>
+    <!--<script src="Scripts/jquery-3.0.0.min.js"></script>-->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!--<script src="Scripts/bootstrap.min.js"></script>-->
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/kendo/2016.2.714/kendo.ui.core.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="Scripts/kendo.all.min.js"></script>
+    <script src="Scripts/ui-bootstrap-tpls-0.11.0.js"></script>
+    <script>
+    document.write('<base href="' + document.location + '" />');
+    </script>
+</head>
+<body ng-controller="MainCtrl" style="padding-top: initial;">
+
+    <div class="row">
+
+            <center><h2 class="page-header" style="margin: 40px 402px 20px;"><img alt="Brand" src="icone-caducee.png" />Medical Clinic Management Application<img alt="Brand" src="icone-caducee.png" /></h2></center>
+        </div>
+
+    <div class="row" ng-include="CurrentView"></div>
+    
+
+        <footer id="footer" style="position:relative;bottom:-169px;left:645px">
+            <p class="h5 text-muted">© 2016 MARIEM AMARI ALL RIGHTS RESERVED</p>
+        </footer>
+
+    <!--<script src="Controllers/script.js"></script>-->
+</body>
+</html>
+
+<script src="Controllers/MainCtrl.js"></script>
+<script src="Controllers/medecinCtrl.js"></script>
+<script src="Controllers/loginCtrl.js"></script>
+<script src="Controllers/patientCtrl.js"></script>
+<script src="Controllers/editpatientCtrl.js"></script>
+<script src="Controllers/calendarCtrl.js"></script>
+<script src="Controllers/verifierCtrl.js"></script>
+<script src="Controllers/verifierdeleteCtrl.js"></script>
+<script src="Controllers/gestionPatientCtrl.js"></script>

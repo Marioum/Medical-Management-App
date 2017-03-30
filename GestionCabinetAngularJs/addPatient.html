@@ -1,0 +1,62 @@
+﻿<div role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-header">
+            <div class="modal-title"><h1>Cordonnées Patient</h1></div>
+        </div>
+        <div class="modal-body">
+            <form name=" formaddpatient">
+                <div class=" form-group" style="padding-left: 45px;padding-right: 350px;">
+                    <label>Cin:</label>
+                    <input type="text" class="form-control" ng-model="newp.numCin" required />
+                </div>
+                <div class="form-group" style="padding-left: 45px;padding-right: 350px;">
+                    <label>Nom:</label>
+                    <input type="text" class="form-control" ng-model="newp.nom" required/>
+                </div>
+                <div class="form-group" style="padding-left: 45px;padding-right: 350px;">
+                    <label>Prénom:</label>
+                    <input type="text" class="form-control" ng-model="newp.prenom" />
+                </div>
+                <div class="form-group" style="padding-left: 45px;padding-right: 350px;">
+                    <label>Date de naissance:</label>
+                    <input type="text" class="form-control" ng-model="newp.dateNaissance" />
+                </div>
+                <div class="form-group" style="padding-left: 45px;padding-right: 350px;">
+                    <label>Sexe:</label>
+                    <input type="text" class="form-control" ng-model="newp.sexe" />
+                </div>
+                <div class="form-group" style="padding-left: 45px;padding-right: 350px;">
+                    <label>Poids:</label>
+                    <input type="text" class="form-control" ng-model="newp.poids" />
+                </div>
+
+                <div class="form-group" style="padding-left: 45px;padding-right: 350px;">
+                    <label>Taille:</label>
+                    <input type="text" class="form-control" ng-model="newp.taille" />
+                </div>
+                <div class="form-group" style="padding-left: 45px;padding-right: 350px;">
+                    <label>Profession:</label>
+                    <input type="text" class="form-control" ng-model="newp.profession" />
+                </div>
+                <div class="form-group" style="padding-left: 45px;padding-right: 350px;">
+                    <label>Etat civil:</label>
+                    <input type="text" class="form-control" ng-model="newp.etatCivil" />
+                </div>
+                <div class="form-group" style="padding-left: 45px;padding-right: 350px;">
+                    <label>Nombre d'enfants:</label>
+                    <input type="number" class="form-control" ng-model="newp.nbreEnfant" />
+
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <center>
+                <button type="button" class="btn btn-success" ng-disabled="!formaddpatient.$valid" ng-click="addPatient(newp)">Add</button>
+                <button type="button" class="btn btn-danger" ng-click="cancelpatient()">Cancel</button>
+            </center>
+        </div>
+
+    </div>
+</div>
+
+

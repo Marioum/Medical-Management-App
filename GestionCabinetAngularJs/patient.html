@@ -1,0 +1,13 @@
+﻿<div class="panel-heading">
+    <center><h3>List of Patients</h3></center>
+</div>
+<div class="row"></div>
+<div class="row"></div>
+
+<div class="panel">
+    <!--<div kendo-grid k-data-source="people" k-columns="[{ title: 'Name', field: 'name' }, { title: 'Country', field: 'country' }]" sortable="true" pageable="true" pageSize="2"></div>-->
+    <kendo-grid options="mainGridOptions" k-rebind="mainGridOptions"></kendo-grid>
+</div>
+<div class="row">
+    <center><button class="btn btn-success" style="width:170px" ng-click="addnewpatient()">Add new patient</button></center>
+</div>

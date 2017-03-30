@@ -1,0 +1,20 @@
+﻿<div id="example">
+
+        <div kendo-scheduler k-options="schedulerOptions">
+            <span k-event-template class='custom-event'>{{dataItem.title}}</span>
+            <div k-all-day-event-template class='custom-all-day-event'>{{dataItem.title}}</div>
+        </div>
+
+
+    <style>
+        .custom-event {
+            color: #fff;
+            text-shadow: 0 1px 0 #000;
+        }
+
+        .custom-all-day-event {
+            text-align: center;
+            text-transform: uppercase;
+        }
+    </style>
+</div>
